@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio — Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="contact" style="margin-top:28px">
+    <h2 style="color:var(--accent)">Get in touch</h2>
+    <p style="color:var(--muted)">Want to collaborate or see my code? Drop a message below or reach me via email/phone.</p>
+
+    <div style="margin-bottom:20px; display:flex; flex-direction:column; gap:8px;">
+      <p style="color:var(--muted)">Email: <a href="mailto:danieladjeyeannan@gmail.com" style="color:var(--accent)">danieladjeyeannan@gmail.com</a></p>
+      <p style="color:var(--muted)">Phone: <a href="tel:+233(0) 257043880" style="color:var(--accent)">+233(0) 257043880</a></p>
+      <p style="color:var(--muted)">Socials: 
+        <a href="https://github.com/BykMoni" style="color:var(--accent)">GitHub</a> • 
+        <a href="https://www.linkedin.com/in/daniel-adjetey-annan-35133536b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color:var(--accent)">LinkedIn</a> • 
+        <a href="https://x.com/BykMoni99?t=9OikETl6ICtShENL2g5G6w&s=09" style="color:var(--accent)">Twitter</a>
+      </p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="you@example.com" required>
+      <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+      <button type="submit">Send message</button>
+      <p id="formMsg" style="color:var(--muted); display:none; margin-top:6px"></p>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 MR. DANIEL • Built with HTML & CSS • <span style="color:var(--muted)">Codveda Internship</span>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name=this.name.value.trim();
+    const email=this.email.value.trim();
+    const message=this.message.value.trim();
+    const msg=document.getElementById('formMsg');
+    if(name.length<2 || !email.includes('@') || message.length<6){
+      msg.style.display='block';
+      msg.textContent='Please provide a valid name, email and message.';
+      return;
+    }
+    msg.style.display='block';
+    msg.textContent='Thanks! This is a demo message — connect your backend or Formspree for real submissions.';
+    this.reset();
+    setTimeout(()=>msg.style.display='none',3500);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio - Home</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-left">
+      <h2>Hello, I'm <span style="color:var(--accent)">DANIEL ADJETEY ANNAN</span></h2>
+      <p>I build clean, modern websites and apps. Currently interning at Codveda - focused on frontend development (React) and full-stack projects.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="projects.html">View Projects</a>
+        <a class="btn secondary" href="https://github.com/BykMoni">GitHub</a>
+      </div>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section" style="margin-top:28px">
+        <h2 style="color:var(--accent)">Skills</h2>
+        <div class="skills">
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+            <h4>Frontend</h4>
+            <p>React, HTML5, CSS3, JavaScript, Vite, Responsive design</p>
+          </div>
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></div>
+            <h4>Backend</h4>
+            <p>Node.js, Express, REST APIs, MongoDB basics</p>
+          </div>
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
+            <h4>Tools</h4>
+            <p>Git, GitHub, VSCode, Postman</p>
+          </div>
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"></div>
+            <h4>Design</h4>
+            <p>Figma fundamentals, accessibility (a11y), UI/UX design</p>
+          </div>
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"></div>
+            <h4>Programming</h4>
+            <p>JavaScript ES6+, Node.js, React, DOM Manipulation</p>
+          </div>
+          <div class="skill-card">
+            <div class="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div>
+            <h4>Styling</h4>
+            <p>CSS3, Flexbox, Grid, Animations, Responsive layouts</p>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div style="margin-top:28px">
+          <h3 style="color:var(--accent); margin-bottom:8px">Experience</h3>
+          <div class="timeline">
+            <div class="exp"><div class="left">2025</div><div class="right"><strong>Intern — Codveda</strong><p style="color:var(--muted);margin:6px 0 0">Working on web projects: portfolio, React app, and full-stack task manager.</p></div></div>
+            <div class="exp"><div class="left">2024</div><div class="right"><strong>Freelance Projects</strong><p style="color:var(--muted);margin:6px 0 0">Built small sites and UI components for local clients.</p></div></div>
+          </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div style="margin-top:28px">
+          <h3 style="color:var(--accent); margin-bottom:8px">Testimonial</h3>
+          <p style="color:var(--muted)">“Great communication and quality work - delivered on time and exceeded expectations.”<br><small style="color:var(--muted)">— Project Lead</small></p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects" style="margin-top:28px">
+        <h2>Selected Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="https://via.placeholder.com/600x340" alt="Project 1">
+            <h3>Portfolio Website</h3>
+            <p>Responsive single-page portfolio with project modals and contact form. Built with HTML, CSS, and vanilla JS.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/600x340" alt="Project 2">
+            <h3>Weather App (React)</h3>
+            <p>React app that consumes OpenWeatherMap API to display current weather and 3-day forecast.</p>
+            <div class="tags"><span class="tag">React</span><span class="tag">API</span><span class="tag">Vite</span></div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/600x340" alt="Project 3">
+            <h3>Task Manager (Full-Stack)</h3>
+            <p>Full-stack TODO app with Express API and MongoDB backend = create, read, update, delete tasks.</p>
+            <div class="tags"><span class="tag">Node</span><span class="tag">Express</span><span class="tag">MongoDB</span></div>
+          </article>
+
+          <article class="card">
+            <img src="https://via.placeholder.com/600x340" alt="Project 4">
+            <h3>Mini E-commerce UI</h3>
+            <p>Static e-commerce layout and components built with CSS Grid and Flexbox; accessible markup.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UX</span></div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Profile Card  -->
+    <aside class="profile-card">
+      <div class="photo"><img src="assets/profile.jpg" alt="Profile Photo"></div>
+      <div class="meta">
+        <div class="role" style="color:var(--muted)">Frontend Developer • React • JavaScript</div>
+      </div>
+      <div style="margin-top:12px; display:flex; gap:8px">
+        <a class="btn" href="mailto:youremail@example.com">Email Me</a>
+        <a class="btn secondary" href="contact.html">Say Hi</a>
+      </div>
+    </aside>
+  </div>
+  <!-- Contact Section -->
+  <section id="contact" style="margin-top:28px">
+    <h2 style="color:var(--accent)">Get in touch</h2>
+    <p style="color:var(--muted)">Want to collaborate or see my code? Reach me via email or visit the Contact page.</p>
+    <a class="btn" href="contact.html">Contact Me</a>
+  </section>
+
+  <footer>
+    © 2025 MR. DANIEL • Built with HTML & CSS • <span style="color:var(--muted)">Codveda Internship</span>
+  </footer>
+</div>
+</body>
+</html>
